@@ -3,62 +3,42 @@ layout: archive
 title: "CV"
 permalink: /cv/
 author_profile: true
-redirect_from:
-  - /resume
 ---
 
 {% include base_path %}
 
+<a href="{{ base_path }}/files/CV_Jiang_202504.pdf">Download the PDF version</a>
+
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* **Ph.D. in Informatics**, Nagoya University, 2025.04 – present (Advisor: Ryuichiro Higashinaka)
+* **M.S. in Informatics**, Nagoya University, 2023.04 – 2025.03 (Advisor: Ryuichiro Higashinaka)
+* **B.S. in Information Systems Engineering**, Soka University, 2021.04 – 2023.03 (Advisor: Masayasu Atsumi)
+* **B.A. in Japanese Language & Linguistics**, Dalian Maritime University, 2018.09 – 2022.06
 
-Work experience
+Experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
-
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* **2023.09 – 2023.11** — Dialogue Robot Competition 2023. Built a spoken dialogue system controlling a humanoid robot; generated context-appropriate expressions and motions from system utterances.
+* **2023.06 – present** — Nagoya University TMI Program (interdisciplinary training).
 
 Publications
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
+<ul>{% for post in site.publications reversed %}{% include archive-single-cv.html %}{% endfor %}</ul>
+
+Honors & Awards
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
+* **2025.03** — Committee Special Award (32 / 726), 31st Annual Meeting of the Association for NLP (NLP2025)
+* **2024.04** — Outstanding Presentation Award, Interim Research Presentation, Graduate School of Informatics, Nagoya University
+
+Scholarships & Grants
 ======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
+* **2025.04 – 2028.03** — THERS Make New Standards Program
+* **2024.04 – 2025.03** — Rotary Yoneyama Scholarship
+* **2023.05 – 2024.03** — Nagoya University TMI Program
+* **2021.04 – 2023.03** — Makiguchi Memorial Education Foundation Scholarship
+
+Languages
 ======
-* Currently signed in to 43 different slack teams
+* **English** — Business level (TOEIC 805, TOEFL 82)
+* **Japanese** — Business level (JLPT N1)
+* **Chinese (Mandarin)** — Native

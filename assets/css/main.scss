@@ -1,43 +1,58 @@
 ---
+# Custom Minimal Mistakes / AcademicPages styling.
+# "Bone & ink" monochrome + sans-serif, ported from the design reference.
+# This file REPLACES assets/css/main.scss in your fork.
+# (The empty front matter above — the two --- lines — is required by Jekyll.)
 ---
 
-/*
- * This file controls what is imported from /_sass
- *
- * Note that the files are processed in the order they are imported, so they are partly
-   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
- */
+@charset "utf-8";
 
-@import
-    "vendor/breakpoint/breakpoint",
+/* 1) Import the skin FIRST (it assigns the default palette)... */
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 
-    "themes",
-    "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
-    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
+/* 2) ...then override fonts + colours BEFORE the theme partials.
+      ($sans-serif etc. are declared with !default in the theme, so setting
+      them here wins; skin colours are NOT !default, which is why these
+      lines come AFTER the skin import above.) */
+$sans-serif: "Hanken Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+$global-font-family: $sans-serif;
+$header-font-family: "Schibsted Grotesk", $sans-serif;
 
-    "include/mixins",
-    "vendor/susy/susy",
+$background-color:         #f4f1ea;
+$text-color:              #16130f;
+$muted-text-color:        #948b7e;
+$primary-color:           #16130f;
+$link-color:              #16130f;
+$link-color-hover:        #16130f;
+$border-color:            #e4ded2;
+$masthead-link-color:     #16130f;
+$masthead-link-color-hover: #16130f;
+$footer-background-color: #f4f1ea;
 
-    "layout/reset",
-    "layout/base",
+/* 3) Theme. */
+@import "minimal-mistakes";
 
-    "include/utilities",
-    "layout/tables",
-    "layout/buttons",
-    "layout/notices",
-    "layout/masthead",
-    "layout/navigation",
-    "layout/footer",
-    "syntax",
+/* 4) A few rules to match the reference design. */
+body { background-color: #f4f1ea; }
 
-    "layout/forms",
+.masthead {
+  background-color: rgba(244, 241, 234, 0.92);
+  border-bottom: 1px solid rgba(22, 19, 15, 0.13);
+}
 
-    "layout/page",
-    "layout/archive",
-    "layout/sidebar",
-    "layout/json_cv",
+.page__content h1,
+.page__content h2,
+.archive__subtitle {
+  font-family: "Schibsted Grotesk", sans-serif;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(22, 19, 15, 0.18);
+  padding-bottom: 0.3em;
+}
 
-    "vendor/font-awesome/fontawesome",
-    "vendor/font-awesome/solid",
-    "vendor/font-awesome/brands"
-;
+a { text-decoration: none; }
+
+/* square-ish portrait instead of the default circle */
+.author__avatar img {
+  border-radius: 4px;
+  max-width: 200px;
+}
