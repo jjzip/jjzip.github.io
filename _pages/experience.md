@@ -7,8 +7,14 @@ author_profile: true
 
 {% include base_path %}
 
-## Research & Work
+## Experience
 
+- November 2025 – Present<br>
+  **National Institute of Informatics (NII)**, Remote<br>
+  Research Assistant<br>
+  Project: Development of spoken dialogue models at LLM-jp project
+
+- 
 * **2023.09 – 2023.11** — Dialogue Robot Competition 2023. Built a spoken dialogue system controlling a humanoid robot; generated context-appropriate expressions and motions from system utterances.
 * **2023.06 – present** — Nagoya University TMI Program (interdisciplinary training).
 
