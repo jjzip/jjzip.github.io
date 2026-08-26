@@ -1,8 +1,10 @@
 # main links shown in the top masthead
+# Each page renders the matching section of the home page; both pull from
+# the shared snippets in _includes/sections/.
 main:
   - title: "Publications"
     url: /publications/
-  - title: "Experience"
-    url: /experience/
   - title: "Education"
     url: /education/
+  - title: "Experience"
+    url: /experience/
