@@ -1,0 +1,10 @@
+---
+layout: post
+title: "Estimating the Emotional Valence of Interlocutors Using Heterogeneous Sensors in Human-Human Dialogue"
+date:   2024-08-21 22:21:59 +00:00
+image: /images/sigdial_2024.png
+categories: research
+authors: "<strong>Jingjing Jiang</strong>, Ao Guo, Ryuichiro Higashinaka"
+venue: "SIGDIAL (Oral)"
+arxiv: https://aclanthology.org/2024.sigdial-1.61/
+---

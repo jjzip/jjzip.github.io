@@ -1,31 +1,172 @@
----
-layout: compress
----
+<!DOCTYPE HTML>
+<html lang="en">
 
-{% include base_path %}
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-<!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js"{% if site.site_theme == "dark" %} data-theme="dark"{% endif %}>
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-  </head>
+    gtag('config', '');
+  </script>
+  <title>{{ site.name }}</title>
 
-  <body>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
+  <meta name="author" content="{{ site.name }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    {{ content }}
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
-    <div class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
-      </footer>
-    </div>
+</head>
 
-    {% include scripts.html %}
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:60%;vertical-align:middle">
+              <h1>
+                Jingjing Jiang
+              </h1>
+              <p>
+                I am a second-year Ph.D. student at Nagoya University, advised by <a href="https://scholar.google.com/citations?user=ycBiJn8AAAAJ&hl=en">Prof. Ryuichiro Higashinaka</a> and a member of the <a href="https://www.ds.is.i.nagoya-u.ac.jp/">Dialogue System Research Group</a>.
+              </p>
+              <p>
+                My research interests lie in the dynamics of face-to-face human interactions and the development of natural human-agent interaction. During my master’s, I collected and analyzed multimodal face-to-face dialogue data, with a broader focus on understanding the affective aspects of interaction. My current research focuses on real-time multimodal human-agent interaction, particularly integrating talking-head generation with full-duplex spoken dialogue systems.
+              </p>
+              <p style="text-align:center">
+                <a target="_blank" href="mailto:jiang.jingjing.k6@s.mail.nagoya-u.ac.jp"> Email</a> &nbsp;/&nbsp;
+                <a href="https://github.com/kyou-1126">GitHub</a> &nbsp;/&nbsp;
+                <a href="https://scholar.google.com/citations?user=KTQWBYYAAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
+                <a href="https://www.linkedin.com/in/jingjing-jiang-840664308"> LinkedIn </a>
+              </p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <img style="width:100%;max-width:100%" alt="profile photo" src="images/profile.jpg">
+            </td>
+          </tr>
+        </table>
 
-  </body>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <h2>Research</h2>
+            </td>
+          </tr>
+        </table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+
+          {% for post in site.posts %}
+          {% for cat in post.categories %}
+          {% if cat == 'research' %}
+          <tr>
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+              <h3>{{post.title}}</h3>
+              <br>
+              {{post.authors}}
+
+              <br>
+              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
+              <br>
+              {% if post.arxiv %}
+              <a href="{{post.arxiv}}">arxiv</a> /
+              {% endif %}
+              {% if post.video %}
+              <a href="{{post.video}}">video</a> /
+              {% endif %}
+              {% if post.code %}
+              <a href="{{post.code}}">code</a> /
+              {% endif %}
+              {% if post.poster %}
+              <a href="{{post.poster}}">poster</a> /
+              {% endif %}
+              {% if post.slides %}
+              <a href="{{post.slides}}">slides</a> /
+              {% endif %}
+              {% if post.website %}
+              <a href="{{post.website}}">website</a> /
+              {% endif %}
+              {% if post.youtube %}
+              <a href="{{post.youtube}}">youtube</a> /
+              {% endif %}
+              <p></p>
+              {{ post.excerpt }}
+            </td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </table>
+        <br>
+        <br>
+        <br>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <h2>Experience</h2>
+            </td>
+          </tr>
+        </table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:1% 2.5%;width:30%;vertical-align:top">
+              2025.11 &ndash; present
+            </td>
+            <td style="padding:1% 2.5%;width:70%;vertical-align:top">
+              <strong>Research Assistant</strong>
+              <br>
+              National Institute of Informatics (NII)
+              <br>
+              Development of spoken dialogue models in the <a href="https://llm-jp.nii.ac.jp/en/home-en">LLM-jp project</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:1% 2.5%;width:30%;vertical-align:top">
+              2023.06 &ndash; present
+            </td>
+            <td style="padding:1% 2.5%;width:70%;vertical-align:top">
+              <strong>Research Assistant</strong>
+              <br>
+              Nagoya University Doctoral Program for World-leading Innovative &amp; Smart Education
+              <br>
+              <a href="https://www.tmi.mirai.nagoya-u.ac.jp/en">Lifestyle Revolution based on Transdisciplinary Mobility Innovation</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:1% 2.5%;width:30%;vertical-align:top">
+              2023.09 &ndash; 2023.11
+            </td>
+            <td style="padding:1% 2.5%;width:70%;vertical-align:top">
+              Dialogue Robot Competition 2023
+              <br>
+              Built a spoken dialogue system controlling a humanoid robot, generating context-appropriate expressions and motions from system utterances.
+            </td>
+          </tr>
+        </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:center;font-size:small;">
+                Design and source code from <a style="font-size:small;" href="https://jonbarron.info">Jon Barron's website</a>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+
 </html>
+
