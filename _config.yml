@@ -21,7 +21,7 @@ footer-links:
   email: jiang.jingjing.k6@s.mail.nagoya-u.ac.jp
   facebook:
   flickr:
-  github: kyou-1126
+  github: jing-jing-jiang
   instagram: 
   linkedin: https://www.linkedin.com/in/jingjing-jiang-840664308/
   pinterest:
@@ -45,7 +45,7 @@ future: true
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: "https://kyou-1126.github.io" # the base hostname & protocol for your site
+url: "https://jing-jing-jiang.github.io" # the base hostname & protocol for your site
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
