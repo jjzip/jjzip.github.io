@@ -28,7 +28,7 @@
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <table style="width:100%;max-width:1000px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tr style="padding:0px">
       <td style="padding:0px">
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
@@ -41,7 +41,10 @@
                 I am a second-year Ph.D. student at Nagoya University, advised by <a href="https://scholar.google.com/citations?user=ycBiJn8AAAAJ&hl=en">Prof. Ryuichiro Higashinaka</a> and a member of the <a href="https://www.ds.is.i.nagoya-u.ac.jp/">Dialogue System Research Group</a>.
               </p>
               <p>
-                My research interests lie in the dynamics of face-to-face human interactions and the development of natural human-agent interaction. During my master’s, I collected and analyzed multimodal face-to-face dialogue data, with a broader focus on understanding the affective aspects of interaction. My current research focuses on real-time multimodal human-agent interaction, particularly integrating talking-head generation with full-duplex spoken dialogue systems.
+                My research interests lie in the dynamics of face-to-face human interactions and the development of natural human-agent interaction. During my master’s, I collected and analyzed multimodal face-to-face dialogue data, with a broader focus on understanding the affective aspects of interaction.
+              </p>
+              <p>
+                My current research focuses on real-time multimodal human-agent interaction, particularly integrating talking-head generation with full-duplex spoken dialogue systems.
               </p>
               <p style="text-align:center">
                 <a target="_blank" href="mailto:jiang.jingjing.k6@s.mail.nagoya-u.ac.jp"> Email</a> &nbsp;/&nbsp;
@@ -64,6 +67,7 @@
           </tr>
         </table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          
           {% for post in site.posts %}
           {% for cat in post.categories %}
           {% if cat == 'research' %}
