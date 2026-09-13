@@ -44,6 +44,19 @@ strong {
   font-display: auto;
 }
 
+h1 {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  font-display: auto;
+  text-align: center;
+  padding: 0px;
+  margin-block-start: 14px;
+  margin-block-end: 14px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 h2 {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 22px;
@@ -62,20 +75,6 @@ h3 {
   padding: 0px;
   margin: 0px;
   display:inline; 
-}
-
-h1 {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
-  font-weight: 700;
-  font-display: auto;
-  text-align: center;
-  padding: 0px;
-  margin-block-start: 14px;
-  margin-block-end: 14px;
-  margin-left: 0px;
-  margin-right: 0px;
-
 }
 
 .one {
@@ -100,12 +99,12 @@ h1 {
 }
 
 span.highlight {
-  background-color: #f9f6f1;
+  background-color: #ffffd0;
 }
-body {
-  background-color: #fefbf6;
-  color: #2b2b2bf6;
-}
+// body {
+//   background-color: #fefbf6;
+//   color: #2b2b2bf6;
+// }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
