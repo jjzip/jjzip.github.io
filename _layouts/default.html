@@ -3,13 +3,13 @@
 
 <head>
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZKTKKC5C1R"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', '');
+    gtag('config', 'G-ZKTKKC5C1R');
   </script>
   <title>{{ site.name }}</title>
 
@@ -48,7 +48,7 @@
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
-              <img style="width:100%;max-width:100%;border-radius:50%" alt="profile photo" src="images/profile.jpg">
+              <img style="width:80%;max-width:80%;border-radius:50%" alt="profile photo" src="images/profile.jpg">
             </td>
           </tr>
         </table>
@@ -73,18 +73,17 @@
               <h3>{{post.title}}</h3>
               <br>
               {{post.authors}}
-
               <br>
               <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
               <br>
               {% if post.arxiv %}
-              <a href="{{post.arxiv}}">arXiv</a> /
+              <a href="{{post.arxiv}}">arXiv</a>
               {% endif %}
               {% if post.video %}
               <a href="{{post.video}}">video</a> /
               {% endif %}
               {% if post.code %}
-              <a href="{{post.code}}">code</a> /
+              / <a href="{{post.code}}">code</a>
               {% endif %}
               {% if post.poster %}
               <a href="{{post.poster}}">poster</a> /
@@ -93,7 +92,7 @@
               <a href="{{post.slides}}">slides</a> /
               {% endif %}
               {% if post.website %}
-              <a href="{{post.website}}">website</a> /
+              / <a href="{{post.website}}">website</a>
               {% endif %}
               {% if post.youtube %}
               <a href="{{post.youtube}}">youtube</a> /
@@ -107,8 +106,6 @@
           {% endfor %}
         </table>
         <br>
-        <br>
-        <br>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
@@ -118,10 +115,10 @@
         </table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
-            <td style="padding:1% 2.5%;width:30%;vertical-align:top">
-              2025.11 &ndash; present
+            <td style="padding:1% 2.5%;width:25%;vertical-align:top">
+              <strong>2025.11 &ndash; present</strong>
             </td>
-            <td style="padding:1% 2.5%;width:70%;vertical-align:top">
+            <td style="padding:1% 2.5%;width:75%;vertical-align:top">
               <strong>Research Assistant</strong>
               <br>
               National Institute of Informatics (NII)
@@ -130,10 +127,10 @@
             </td>
           </tr>
           <tr>
-            <td style="padding:1% 2.5%;width:30%;vertical-align:top">
-              2023.06 &ndash; present
+            <td style="padding:1% 2.5%;width:25%;vertical-align:top">
+              <strong>2023.06 &ndash; present</strong>
             </td>
-            <td style="padding:1% 2.5%;width:70%;vertical-align:top">
+            <td style="padding:1% 2.5%;width:75%;vertical-align:top">
               <strong>Research Assistant</strong>
               <br>
               Nagoya University Doctoral Program for World-leading Innovative &amp; Smart Education
@@ -142,23 +139,23 @@
             </td>
           </tr>
           <tr>
-            <td style="padding:1% 2.5%;width:30%;vertical-align:top">
-              2023.09 &ndash; 2023.11
+            <td style="padding:1% 2.5%;width:25%;vertical-align:top">
+              <strong>2023.09 &ndash; 2023.11</strong>
             </td>
-            <td style="padding:1% 2.5%;width:70%;vertical-align:top">
-              Dialogue Robot Competition 2023
+            <td style="padding:1% 2.5%;width:75%;vertical-align:top">
+              <strong>Robot Competition 2023</strong>
               <br>
               Built a spoken dialogue system controlling a humanoid robot, generating context-appropriate expressions and motions from system utterances.
             </td>
           </tr>
         </table>
-
+        <br>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:0px">
               <br>
               <p style="text-align:center;font-size:small;">
-                Design and source code from <a style="font-size:small;" href="https://jonbarron.info">Jon Barron's website</a>
+                Source code from <a style="font-size:small;" href="https://jonbarron.info">Jon Barron's website</a>
               </p>
             </td>
           </tr>
